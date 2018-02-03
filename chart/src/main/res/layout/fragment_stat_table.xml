@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/table_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_row_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:lines="2"
+            android:ems="3"
+            android:gravity="center"
+            android:textSize="16dp"
+             />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="?android:listDivider"/>
+
+        <com.codyy.chart.views.FeedBackScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_gravity="center_vertical"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:id="@+id/ll_columns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:showDividers="middle"
+                android:layout_gravity="center_vertical"/>
+        </com.codyy.chart.views.FeedBackScrollView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="?android:listDivider"
+        android:layout_alignBottom="@id/table_title"/>
+
+    <com.codyy.pulltorefresh.views.PullToRefreshRecyclerView
+        android:id="@+id/rcv_statistics"
+        android:layout_below="@id/table_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="cnp_color1">#a0dca0</color>
+    <color name="cnp_color2">#3dc6a8</color>
+    <color name="cnp_color3">#f4cf42</color>
+    <color name="cnp_color4">#91d4e5</color>
+    <color name="cnp_color5">#f4eca5</color>
+    <color name="cnp_color6">#feadac</color>
+    <color name="cnp_color7">#f78db3</color>
+    <color name="cnp_color8">#5be2db</color>
+    <color name="cnp_color_gray">#FFD4D6D6</color>
+
+</resources>
