@@ -1,5 +1,30 @@
 apply plugin: 'com.android.library'
 
+def VERSION_NAME = "0.0.1"
+ext {
+    bintrayRepo = 'Maven'
+    bintrayName = 'codyychart'
+
+    publishedGroupId = 'com.github.jdpxiaoming.tickseekbar'
+    libraryName = 'CodyyChart'
+    artifact = 'codyychart'
+
+    libraryDescription = 'A custom SeekBar on Android.add the thumb text y disntance.'
+
+    siteUrl = 'https://github.com/CodyyAndroid/CodyyChart'
+    gitUrl = 'https://github.com/CodyyAndroid/CodyyChart.git'
+
+    libraryVersion = VERSION_NAME
+
+    developerId = 'jdpxiaoming'
+    developerName = 'poe.Cai'
+    developerEmail = '302940116@qq.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 27
 
@@ -7,7 +32,7 @@ android {
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
 
@@ -21,8 +46,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
 }
+
+
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
@@ -32,3 +61,6 @@ dependencies {
     implementation project(':pulltorefresh')
     api 'com.android.support:design:27.0.0'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
