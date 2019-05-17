@@ -10,5 +10,8 @@ CodyyChart
 ### 1.1 饼状图
 ![pic](https://github.com/CodyyAndroid/CodyyChart/raw/master/pics/circleschedule.png?raw=true)
 
+### 1.2 环形箭头图
+![pic](https://github.com/CodyyAndroid/CodyyChart/raw/master/pics/circleschedule.png?raw=true)
+
 ### 2.0 类似虎扑的球员统计表格
-![pic](https://github.com/CodyyAndroid/CodyyChart/raw/master/pics/schedules.png?raw=true)
+![pic](https://github.com/CodyyAndroid/CodyyChart/raw/master/pics/arrow_view.png?raw=true)

@@ -37,6 +37,12 @@ public class MainActivity extends Activity {
                 ScheduleActivity.start(MainActivity.this,ScheduleActivity.class);
             }
         });
-
+        //环形箭头分布圆环
+        findViewById(R.id.tv_circle_arrow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CircleArrowActivity.start(MainActivity.this,CircleArrowActivity.class);
+            }
+        });
     }
 }
