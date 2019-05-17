@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
+//apply plugin:'java'
 
-def VERSION_NAME = "0.0.1"
+def VERSION_NAME = "1.0.0"
 ext {
     bintrayRepo = 'Maven'
     bintrayName = 'codyychart'
@@ -9,7 +10,7 @@ ext {
     libraryName = 'CodyyChart'
     artifact = 'codyychart'
 
-    libraryDescription = 'A custom SeekBar on Android.add the thumb text y disntance.'
+    libraryDescription = 'A custom Chart of System Canvas draw line and rect . bar chart /recycling arrow chart/ circle chart and so on.'
 
     siteUrl = 'https://github.com/CodyyAndroid/CodyyChart'
     gitUrl = 'https://github.com/CodyyAndroid/CodyyChart.git'
@@ -27,8 +28,6 @@ ext {
 
 android {
     compileSdkVersion 27
-
-
 
     defaultConfig {
         minSdkVersion 14
@@ -51,16 +50,17 @@ android {
     }
 }
 
-
-
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation project(':pulltorefresh')
     api 'com.android.support:design:27.0.0'
+    implementation 'com.android.support:appcompat-v7:27.0.0'
+    implementation 'com.jakewharton:butterknife:8.6.0'
+    implementation 'com.android.support:recyclerview-v7:27.0.0'
+    implementation 'com.jakewharton.timber:timber:4.5.1'
 }
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/jdpxiaoming/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/jdpxiaoming/JCenter/master/bintrayv1.gradle'

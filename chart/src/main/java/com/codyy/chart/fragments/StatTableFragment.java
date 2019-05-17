@@ -21,10 +21,10 @@ import android.widget.TextView;
 
 import com.codyy.chart.R;
 import com.codyy.chart.entities.StatTableModel;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase;
+import com.codyy.chart.pulltorefresh.views.PullToRefreshRecyclerView;
+import com.codyy.chart.pulltorefresh.views.SimpleRecyclerView;
 import com.codyy.chart.views.FeedBackScrollView;
-import com.codyy.pulltorefresh.PullToRefreshBase;
-import com.codyy.pulltorefresh.views.PullToRefreshRecyclerView;
-import com.codyy.pulltorefresh.views.SimpleRecyclerView;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

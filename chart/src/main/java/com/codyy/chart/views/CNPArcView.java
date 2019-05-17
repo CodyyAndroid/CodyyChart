@@ -28,7 +28,6 @@ import java.util.List;
  * circle null point chart .
  * @author caixingming
  * create at 2018/02/01
- *  {@link <http://ogd2b73e2.bkt.clouddn.com/circlenullpoint.jpg>}
  */
 public class CNPArcView extends View {
 

@@ -58,7 +58,7 @@
         android:background="?android:listDivider"
         android:layout_alignBottom="@id/table_title"/>
 
-    <com.codyy.pulltorefresh.views.PullToRefreshRecyclerView
+    <com.codyy.chart.pulltorefresh.views.PullToRefreshRecyclerView
         android:id="@+id/rcv_statistics"
         android:layout_below="@id/table_title"
         android:layout_width="match_parent"

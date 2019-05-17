@@ -1,4 +1,4 @@
-package com.codyy.pulltorefresh.views;
+package com.codyy.chart.pulltorefresh.views;
 
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
@@ -6,8 +6,8 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.codyy.pulltorefresh.PullToRefreshBase;
-import com.codyy.pulltorefresh.R;
+import com.codyy.chart.R;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase;
 
 
 /**

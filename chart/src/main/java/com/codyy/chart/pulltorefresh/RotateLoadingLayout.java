@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.codyy.pulltorefresh;
+package com.codyy.chart.pulltorefresh;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -22,9 +22,8 @@ import android.graphics.drawable.Drawable;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView.ScaleType;
-
-import com.codyy.pulltorefresh.PullToRefreshBase.Mode;
-import com.codyy.pulltorefresh.PullToRefreshBase.Orientation;
+import com.codyy.chart.R;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase.*;
 
 public class RotateLoadingLayout extends LoadingLayout {
 

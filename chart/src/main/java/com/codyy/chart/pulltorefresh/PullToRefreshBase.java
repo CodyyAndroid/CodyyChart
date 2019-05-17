@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.codyy.pulltorefresh;
+package com.codyy.chart.pulltorefresh;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -34,6 +34,7 @@ import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
+import com.codyy.chart.R;
 
 
 public abstract class PullToRefreshBase<T extends View> extends LinearLayout implements IPullToRefresh<T> {
@@ -610,7 +611,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	 * <p/>
 	 * Be sure to set the ID of the view in this method, especially if you're
 	 * using a ListActivity or ListFragment.
-	 * 
+	 *
 	 * @param context Context to create view with
 	 * @param attrs AttributeSet from wrapped class. Means that anything you
 	 *            include in the XML layout declaration will be routed to the
@@ -654,7 +655,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	/**
 	 * Allows Derivative classes to handle the XML Attrs without creating a
 	 * TypedArray themsevles
-	 * 
+	 *
 	 * @param a - TypedArray of PullToRefresh Attributes
 	 */
 	protected void handleStyledAttributes(TypedArray a) {
@@ -663,7 +664,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	/**
 	 * Implemented by derived class to return whether the View is in a state
 	 * where the user can Pull to Refresh by scrolling from the end.
-	 * 
+	 *
 	 * @return true if the View is currently in the correct state (for example,
 	 *         bottom of a ListView)
 	 */
@@ -672,7 +673,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	/**
 	 * Implemented by derived class to return whether the View is in a state
 	 * where the user can Pull to Refresh by scrolling from the start.
-	 * 
+	 *
 	 * @return true if the View is currently the correct state (for example, top
 	 *         of a ListView)
 	 */
@@ -681,7 +682,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	/**
 	 * Called by {@link #onRestoreInstanceState(Parcelable)} so that derivative
 	 * classes can handle their saved instance state.
-	 * 
+	 *
 	 * @param savedInstanceState - Bundle which contains saved instance state.
 	 */
 	protected void onPtrRestoreInstanceState(Bundle savedInstanceState) {
@@ -690,7 +691,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	/**
 	 * Called by {@link #onSaveInstanceState()} so that derivative classes can
 	 * save their instance state.
-	 * 
+	 *
 	 * @param saveState - Bundle to be updated with saved state.
 	 */
 	protected void onPtrSaveInstanceState(Bundle saveState) {
@@ -717,7 +718,7 @@ public abstract class PullToRefreshBase<T extends View> extends LinearLayout imp
 	/**
 	 * Called when the UI has been to be updated to be in the
 	 * {@link State#REFRESHING} or {@link State#MANUAL_REFRESHING} state.
-	 * 
+	 *
 	 * @param doScroll - Whether the UI should scroll for this event.
 	 */
 	protected void onRefreshing(final boolean doScroll) {

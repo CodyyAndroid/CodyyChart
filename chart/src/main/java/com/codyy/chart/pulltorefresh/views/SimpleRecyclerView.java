@@ -1,4 +1,4 @@
-package com.codyy.pulltorefresh.views;
+package com.codyy.chart.pulltorefresh.views;
 
 import android.content.Context;
 import android.support.annotation.Nullable;

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.codyy.pulltorefresh;
+package com.codyy.chart.pulltorefresh;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -34,9 +34,8 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
-import com.codyy.pulltorefresh.PullToRefreshBase.Mode;
-import com.codyy.pulltorefresh.PullToRefreshBase.Orientation;
+import com.codyy.chart.R;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase.*;
 
 
 @SuppressLint("ViewConstructor")
@@ -56,14 +55,14 @@ public abstract class LoadingLayout extends FrameLayout implements ILoadingLayou
 	private final TextView mHeaderText;
 	private final TextView mSubHeaderText;
 
-	protected final Mode mMode;
-	protected final Orientation mScrollDirection;
+	protected final PullToRefreshBase.Mode mMode;
+	protected final PullToRefreshBase.Orientation mScrollDirection;
 
 	private CharSequence mPullLabel;
 	private CharSequence mRefreshingLabel;
 	private CharSequence mReleaseLabel;
 
-	public LoadingLayout(Context context, final Mode mode, final Orientation scrollDirection, TypedArray attrs) {
+	public LoadingLayout(Context context, final PullToRefreshBase.Mode mode, final Orientation scrollDirection, TypedArray attrs) {
 		super(context);
 		mMode = mode;
 		mScrollDirection = scrollDirection;

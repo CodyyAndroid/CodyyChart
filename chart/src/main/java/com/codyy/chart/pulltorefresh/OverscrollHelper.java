@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.codyy.pulltorefresh;
+package com.codyy.chart.pulltorefresh;
 
 import android.annotation.TargetApi;
 import android.util.Log;
 import android.view.View;
 
-import com.codyy.pulltorefresh.PullToRefreshBase.Mode;
-import com.codyy.pulltorefresh.PullToRefreshBase.State;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase.Mode;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase.State;
 
 @TargetApi(9)
 public final class OverscrollHelper {
@@ -49,7 +49,7 @@ public final class OverscrollHelper {
 	 *            touch event, passed through from from overScrollBy call
 	 */
 	public static void overScrollBy(final PullToRefreshBase<?> view, final int deltaX, final int scrollX,
-			final int deltaY, final int scrollY, final boolean isTouchEvent) {
+                                    final int deltaY, final int scrollY, final boolean isTouchEvent) {
 		overScrollBy(view, deltaX, scrollX, deltaY, scrollY, 0, isTouchEvent);
 	}
 
@@ -57,7 +57,7 @@ public final class OverscrollHelper {
 	 * Helper method for Overscrolling that encapsulates all of the necessary
 	 * function. This version of the call is used for Views that need to specify
 	 * a Scroll Range but scroll back to it's edge correctly.
-	 * 
+	 *
 	 * @param view - PullToRefreshView that is calling this.
 	 * @param deltaX - Change in X in pixels, passed through from from
 	 *            overScrollBy call
@@ -73,14 +73,14 @@ public final class OverscrollHelper {
 	 *            touch event, passed through from from overScrollBy call
 	 */
 	public static void overScrollBy(final PullToRefreshBase<?> view, final int deltaX, final int scrollX,
-			final int deltaY, final int scrollY, final int scrollRange, final boolean isTouchEvent) {
+                                    final int deltaY, final int scrollY, final int scrollRange, final boolean isTouchEvent) {
 		overScrollBy(view, deltaX, scrollX, deltaY, scrollY, scrollRange, 0, DEFAULT_OVERSCROLL_SCALE, isTouchEvent);
 	}
 
 	/**
 	 * Helper method for Overscrolling that encapsulates all of the necessary
 	 * function. This is the advanced version of the call.
-	 * 
+	 *
 	 * @param view - PullToRefreshView that is calling this.
 	 * @param deltaX - Change in X in pixels, passed through from from
 	 *            overScrollBy call
@@ -100,8 +100,8 @@ public final class OverscrollHelper {
 	 *            touch event, passed through from from overScrollBy call
 	 */
 	public static void overScrollBy(final PullToRefreshBase<?> view, final int deltaX, final int scrollX,
-			final int deltaY, final int scrollY, final int scrollRange, final int fuzzyThreshold,
-			final float scaleFactor, final boolean isTouchEvent) {
+                                    final int deltaY, final int scrollY, final int scrollRange, final int fuzzyThreshold,
+                                    final float scaleFactor, final boolean isTouchEvent) {
 
 		final int deltaValue, currentScrollValue, scrollValue;
 		switch (view.getPullToRefreshScrollDirection()) {

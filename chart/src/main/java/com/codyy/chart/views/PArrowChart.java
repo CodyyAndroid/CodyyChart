@@ -24,9 +24,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *  首位相接环形统计图.
- *  @author caixingming 2019/05/16
- * {@link <https://github.com/jdpxiaoming>}
+ *  首尾相接环形统计图.
+ *  recycling arrow combine an circle chart.
+ * @author caixingming 2019/05/16
  */
 public class PArrowChart extends View {
 

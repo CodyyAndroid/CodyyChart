@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.codyy.pulltorefresh;
+package com.codyy.chart.pulltorefresh;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -25,9 +25,8 @@ import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView.ScaleType;
 
-import com.codyy.pulltorefresh.PullToRefreshBase.Mode;
-import com.codyy.pulltorefresh.PullToRefreshBase.Orientation;
-
+import com.codyy.chart.R;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase.*;
 
 @SuppressLint("ViewConstructor")
 public class FlipLoadingLayout extends LoadingLayout {
@@ -39,7 +38,7 @@ public class FlipLoadingLayout extends LoadingLayout {
 	public FlipLoadingLayout(Context context, final Mode mode, final Orientation scrollDirection, TypedArray attrs) {
 		super(context, mode, scrollDirection, attrs);
 
-		final int rotateAngle = mode == Mode.PULL_FROM_START ? -180 : 180;
+		final int rotateAngle = mode == PullToRefreshBase.Mode.PULL_FROM_START ? -180 : 180;
 
 		mRotateAnimation = new RotateAnimation(0, rotateAngle, Animation.RELATIVE_TO_SELF, 0.5f,
 				Animation.RELATIVE_TO_SELF, 0.5f);

@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.codyy.pulltorefresh;
+package com.codyy.chart.pulltorefresh;
 
 import android.view.View;
 import android.view.animation.Interpolator;
 
-import com.codyy.pulltorefresh.PullToRefreshBase.Mode;
-import com.codyy.pulltorefresh.PullToRefreshBase.OnRefreshListener;
-import com.codyy.pulltorefresh.PullToRefreshBase.OnRefreshListener2;
-import com.codyy.pulltorefresh.PullToRefreshBase.State;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase.Mode;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase.OnRefreshListener;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase.OnRefreshListener2;
+import com.codyy.chart.pulltorefresh.PullToRefreshBase.State;
 
 public interface IPullToRefresh<T extends View> {
 

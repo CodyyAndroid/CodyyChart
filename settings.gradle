@@ -1,1 +1,1 @@
-include ':app', ':chart', ':pulltorefresh'
+include ':app', ':chart', ':com.codyy.chart.pulltorefresh'

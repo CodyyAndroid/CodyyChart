@@ -1,10 +1,7 @@
-package com.codyy.pulltorefresh;
+package com.codyy.chart.pulltorefresh;
 
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-
-import com.codyy.pulltorefresh.ILoadingLayout;
-import com.codyy.pulltorefresh.LoadingLayout;
 
 import java.util.HashSet;
 
